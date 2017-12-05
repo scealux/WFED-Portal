@@ -8,7 +8,7 @@
 */
 body{
      background: black;
-     overflow-x: hidden;
+     overflow: hidden;
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -21,20 +21,31 @@ body{
           height: 100vh;
           text-align: center;
           flex-wrap: wrap;
+          overflow: hidden;
+     }
+     #backgroundText{
+          font-family: 'Fredoka One', sans-serif;
+          position: fixed;
+          font-size: 40em;
+          opacity: .25;
+          z-index: -1;
+          color: #FFF7DC;
+          line-height: 90%;
      }
 /*MAIN TABS*/
-          .tabL1 {
+          .tab {
                opacity: .8;
                justify-content: center;
                text-align: center;
                align-items: center;
                color: #FFF7DC;
-               padding: 100px;
+               padding: 10px;
                flex: 2 .25 auto;
-               height: inherit;
+               height: 100vh;
                font-family: 'Fredoka One', sans-serif;
                display: flex;
                transition: flex 1s, opacity .5s, height 1s;
+               overflow: hidden;
           }
           /*INDIVIDUALIZATION*/
           #projects{
@@ -47,21 +58,21 @@ body{
                background: #A7C7C5;
           }
           /*HOVER*/
-          .tabL1:hover{
+          .tab:hover{
                opacity: 1; /*To 'GLOW'*/
                flex: 10 0 auto;
           }
           #projects:hover #projectsInner {
                opacity: 1; /*To 'MAKE VISIBLE'*/
-               height: 200px;
+               height: 130px;
           }
           #labs:hover #labsInner {
                opacity: 1; /*To 'MAKE VISIBLE'*/
-               height: 200px;
+               height: 455px;
           }
           #journals:hover #journalsInner {
                opacity: 1; /*To 'MAKE VISIBLE'*/
-               height: 200px;
+               height: 535px;
           }
 /*THE ONLY THING THAT SEEMS TO KEEP THINGS CENTERED*/
                #contentGuide{
@@ -79,17 +90,18 @@ body{
                          transition: font-size 1s;
                     }
                          .inner{
+                              margin-top: -20px;
                               text-align: center;
-                              height: 200px;
                               opacity: 0;
-                              height: 0px;
+                              height: 1px;
                               transition: opacity .5s, height 1s;
                          }
                               p{
+                                   font-size: 2em;
                                    padding: 5px;
                                    margin-left: 0px;
                                    border-radius: 20px;
-                                   transition: background 1s;
+                                   transition: background .5s;
                               }
                               p:hover{
                                    background: #172A40;
@@ -107,3 +119,8 @@ body{
           iframe{
                width: 100%;
           }
+@media only screen and (min-width: 100px) and (max-width: 745px)  {
+     .nonMobile{
+          display:none;
+    }
+}
