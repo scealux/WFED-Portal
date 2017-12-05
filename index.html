@@ -2,20 +2,76 @@
 <html>
      <head>
           <meta charset="utf-8">
+          <link href="styles.css" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
           <title>AF - WFED</title>
      </head>
      <body>
           <div id="container">
-               <div id="projects">
-                    Projects
+
+               <div id="projects" class="tabL1">
+                    <div class="contentGuide">
+                         <h1 class="rotate"><span class="titleText">Projects</span>&nbsp;<i class="fa fa-code"></i></h1>
+                         <div class="inner" id="projectsInner">
+                              <p id="P01" class="PXX">
+                                   Project 01
+                              </p>
+                              <p id="P02" class="PXX">
+                                   Project 02
+                              </p>
+                         </div>
+                    </div>
                </div>
-               <div id="labs">
-                    Labs
+
+               <div id="labs" class="tabL1">
+                    <div class="contentGuide">
+                         <h1 class="rotate" id="labsHeader"><span class="titleText">Labs</span>&nbsp;<i class="fa fa-flask"></i></h1>
+                         <div class="inner" id="labsInner">
+                              <p id="L01" class="LXX">
+                                   Lab 01
+                              </p>
+                              <p id="L02" class="LXX">
+                                   Lab 02
+                              </p>
+                              <p id="L03" class="LXX">
+                                   Lab 03
+                              </p>
+                              <p id="L04" class="LXX">
+                                   Lab 04
+                              </p>
+                              <p id="L05" class="LXX">
+                                   Lab 05
+                              </p>
+                              <p id="L06" class="LXX">
+                                   Lab 06
+                              </p>
+                         </div>
+                    </div>
                </div>
-               <div id="journals">
-                    Journals
+
+               <div id="journals" class="tabL1">
+                    <div class="contentGuide">
+                         <h1 class="rotate"><span class="titleText">Journals</span>&nbsp;<i class="fa fa-book"></i></h1>
+                         <div class="inner" id="journalsInner">
+                              <p id="J01" class="JXX">
+                                   Journal 01
+                              </p>
+                              <p id="J02" class="JXX">
+                                   Journal 02
+                              </p>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="contextMenu">
+                    <iframe id="theFrame" src="" title="iframe example 1">
+                         <p>Your browser does not support iframes.</p>
+                    </iframe>
                </div>
           </div>
-
+          <script src="scripts.js"></script>
      </body>
 </html>
